@@ -10,7 +10,7 @@ map('n', '<space>v', ':vsp<cr>')
 map('n', '<space>h', ':sp<cr>')
 
 -- open explorer
-map('n', '<space>e', '<cmd>Explore<cr>')
+map('n', '<space>e', '<cmd>NvimTreeToggle<cr>')
 
 -- open horizontal terminal
 map('n', '<space>t', '<cmd>term<cr>')
