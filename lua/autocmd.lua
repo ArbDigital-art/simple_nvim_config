@@ -1,7 +1,7 @@
-vim.api.nvim_create.autocmd({
-	'InsertLeave',
-	'TextChanged'},
-	{
-		pattern = '*.*',
-	}
-})
+-- vim.api.nvim_create.autocmd({
+-- 	'InsertLeave',
+-- 	'TextChanged'},
+-- 	{
+-- 		pattern = '*.*',
+-- 	}
+-- })
