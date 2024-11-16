@@ -3,6 +3,17 @@ local lazy = require 'lazy'
 
 local plugins = {
 	--
+	-- autotag/autopairs
+	{
+		'windwp/nvim-ts-autotag',
+		'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+	},
+	-- end autotag
+	--
 	-- NvimTree plugin
 	{
 		'nvim-tree/nvim-tree.lua',
