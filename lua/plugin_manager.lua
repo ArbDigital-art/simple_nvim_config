@@ -9,14 +9,21 @@ local plugins = {
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {
 			'nvim-tree/nvim-web-devicons'
-		},
-		config = function ()
-			local tree = require 'nvim-tree'
-
-			tree.setup()
-		end
+		}
 	},
 	-- end NvimTree
+	--
+	-- colorscheme catppuccin
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+
+		config = function ()
+			vim.cmd 'colorscheme catppuccin'
+		end
+	},
+	-- end catppuccin
 }
 
 lazy.setup(plugins)
