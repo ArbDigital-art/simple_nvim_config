@@ -1,8 +1,7 @@
--- Setup lazy.nvim
+-- plugins
 local lazy = require 'lazy'
 
 local plugins = {
-	-- plugins here
 	--
 	-- NvimTree plugin
 	{
@@ -24,6 +23,13 @@ local plugins = {
 		end
 	},
 	-- end catppuccin
+	--
+	-- treesitter
+	{
+		'nvim-treesitter/nvim-treesitter',
+		build = ':TSUpdate',
+	},
+
 }
 
 lazy.setup(plugins)
